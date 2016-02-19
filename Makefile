@@ -7,7 +7,7 @@ RM := rm -f
 release: CFLAGS += -O2
 release: libheap.so
 
-debug: CFLAGS += -O2
+debug: CFLAGS += -Og -g
 debug: libheap.so
 
 libheap.so: heap.c heap.h
